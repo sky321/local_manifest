@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="nvertigo"
+           fetch="https://github.com/nvertigo/" />
+
+  <remove-project name="OnePlusOSS/android_build" />
+  <remove-project name="OnePlusOSS/android_vendor_qcom_thulium" />
+  <remove-project name="OnePlusOSS/android_kernel_oneplus_msm8996" />
+  <remove-project name="OnePlusOSS/android_vendor_oneplus_8996N" />
+
+  <project name="oss_android_build" path="build" remote="nvertigo" revision="oneplus/QC8996_N" />
+  <project name="android_device_qcom_msm8996" path="device/qcom/msm8996" remote="nvertigo" revision="oneplus/QC8996_N" />
+  <project name="android_kernel_oneplus_msm8996" path="kernel/msm-3.18" remote="nvertigo" revision="oneplus/QC8996_N" />
+  <project name="android_vendor_oneplus_oneplus3T" path="vendor/oneplus" remote="nvertigo" revision="oneplus3t_N" />
+
+
+</manifest>
