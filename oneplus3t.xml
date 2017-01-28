@@ -4,15 +4,38 @@
   <remote  name="nvertigo"
            fetch="https://github.com/nvertigo/" />
 
-  <remove-project name="OnePlusOSS/android_build" />
-  <remove-project name="OnePlusOSS/android_vendor_qcom_thulium" />
-  <remove-project name="OnePlusOSS/android_kernel_oneplus_msm8996" />
-  <remove-project name="OnePlusOSS/android_vendor_oneplus_8996N" />
+<!-- get the device-tree, kernel and all dependencies -->
 
-  <project name="oss_android_build" path="build" remote="nvertigo" revision="oneplus/QC8996_N" />
-  <project name="android_device_qcom_msm8996" path="device/qcom/msm8996" remote="nvertigo" revision="oneplus/QC8996_N" />
-  <project name="android_kernel_oneplus_msm8996" path="kernel/msm-3.18" remote="nvertigo" revision="oneplus/QC8996_N" />
-  <project name="android_vendor_oneplus_oneplus3T" path="vendor/oneplus" remote="nvertigo" revision="oneplus3t_N" />
+  <project name="nvertigo/android_device_oneplus_oneplus3t" path="device/oneplus/oneplus3t" remote="github" revision="cm-14.1" />
+  <project name="nvertigo/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="github" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="github" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="github" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
 
+<!-- get the proprietary vendor blobs -->
+
+  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+  <project name="nvertigo/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
+
+<!-- get qcom native Snapdragon llvm toolchain -->
+
+  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_3.8/prebuilt/linux-x86_64" name="llvm-Snapdragon_LLVM_for_Android" remote="nvertigo" revision="3.8.8" />
+
+<!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
+
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="arm-eabi-4.8" remote="nvertigo" revision="master" />
+
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="nvertigo" revision="master" />
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" remote="nvertigo" revision="master" />
+
+<!-- add modified busybox (does not install module links) -->
+
+  <project path="external/busybox" name="android_external_busybox" remote="nvertigo" revision="cm-14.1" />
 
 </manifest>
