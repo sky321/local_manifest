@@ -1,6 +1,6 @@
 This is the local manifest for Nvertigo/LineageOS cm-14.1 for oneplus3t.
 
-The repos are optimized for oneplus3t and does NOT work
+The repo is optimized for oneplus3t and does NOT work
 for oneplus3.
 
 git clone this wherever you want and make symblic links
@@ -30,7 +30,7 @@ linux.
 Prerequisites
 -------------
 
-Setup your build environment for the linuxdistribution of choice.
+Setup your build environment for the linux distribution of choice.
 There are quite some tutorials around; as general starting 
 point you may want to read:
 https://source.android.com/source/initializing.html
@@ -70,9 +70,10 @@ Syncing (aka download) the sources
 ----------------------------------
 
 Shell command:
-repo sync #this takes some time; it's about 20GB to fetch
+#this takes some time; it's about 20GB to fetch
+repo sync
 
-Meanwhile check my-build and edit to meet your needs.
+Meanwhile check my-build and edit it to meet your needs.
 
 When the sync has finished, adjust TARGET_UNOFFICIAL_BUILD_ID
 in device/oneplus/oneplus3t/lineage.mk
@@ -88,10 +89,17 @@ popd
 Building LineageOS
 ------------------
 
+The example build script calls "make clean" before each build. On
+the first build after "repo sync" it doesn't make a differencei,
+because your out dir does not exist at all. If you decide to 
+comment that out, remember to comment it in again after your next
+"repo sync" to make sure, everything is build from the updated
+sources.
+
 Shell command:
 ./my-build
 
-If every thing works, you will get a flashable zip in:
+If everything worked wirhout errors, you will get a flashable zip in
 out/target/product/oneplus3t/
 
 If not, check make.log for errors.
