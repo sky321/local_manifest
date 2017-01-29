@@ -60,6 +60,8 @@ ln -s ../../my_tmp/local_manifest/oneplus3t.xml .
 ln -s ../../my_tmp/local_manifest/zz-remove-unused.xml .
 cd ../..
 ln -s my_tmp/my_build.sh ./my-build
+# you will love "git lg1", I'm sure! So add the aliases to ~/.gitconfig
+cat my_tmp/local_manifest >>~/.gitconfig
 
 
 Syncing (aka download) the sources
@@ -72,6 +74,13 @@ Meanwhile check my-build and edit to meet your needs.
 
 When the sync has finished, adjust TARGET_UNOFFICIAL_BUILD_ID
 in device/oneplus/oneplus3t/lineage.mk
+
+Shell commands:
+# just to understand; the next three commands are not part
+# of the build process
+pushd device/oneplus/oneplus3t
+git lg1
+popd
 
 
 Building LineageOS
