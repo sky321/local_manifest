@@ -13,6 +13,9 @@ zz-remove-unused.xml: removes darwin build environment;
                       it's not mandatory, but makes syncs
 		      smaller
 
+my_build.sh: example of a simple build script
+
+
 How to build this from source
 =============================
 
