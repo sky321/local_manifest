@@ -53,7 +53,7 @@ cd ../../.repo
 mkdir local_manifest
 cd local_manifest
 ln -s ../../my_tmp/local_manifest/oneplus3t.xml .
-#if you are on macos (aka darwin) skip the next command
+# if you are on macos (aka darwin) skip the next command
 ln -s ../../my_tmp/local_manifest/zz-remove-unused.xml .
 cd ../..
 ln -s my_tmp/my_build.sh ./my-build
