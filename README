@@ -15,6 +15,8 @@ zz-remove-unused.xml: removes darwin build environment;
 
 my_build.sh: example of a simple build script
 
+gitconfig-example: two usefull aliases (those saved my a** many times)
+
 
 How to build this from source
 =============================
