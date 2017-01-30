@@ -18,8 +18,8 @@ my_build.sh: example of a simple build script
 gitconfig-example: two usefull aliases (those saved my a** many times)
 
 
-How to build this from source
-=============================
+How to build this from source (this part of the README is still beta)
+=====================================================================
 
 This is more a step by step guide, then a HOWTO. To understand
 what this all is about, try to learn as much as possible on
@@ -45,7 +45,10 @@ to speed up future buildings) for.
 General preperation
 -------------------
 
-Shell commnds:
+Shell commands:
+# get the repo command; put it in some directory in your $PATH
+sudo curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
+sudo chmod a+x ~/bin/repo
 cd /where/you/want/to/your/source-tree
 mkdir -p cm14/my_tmp
 cd cm14
