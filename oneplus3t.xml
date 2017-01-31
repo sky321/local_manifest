@@ -34,6 +34,8 @@
 
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" remote="nvertigo" revision="master" />
 
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="aarch64-linux-android-4.9-kernel" remote="nvertigo" revision="master" />
+
 <!-- add modified busybox (does not install module links) -->
 
   <project path="external/busybox" name="android_external_busybox" remote="nvertigo" revision="cm-14.1" />
