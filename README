@@ -47,7 +47,7 @@ General preperation
 
 Shell commands:
 # get the repo command; put it in some directory in your $PATH
-sudo curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
+sudo curl https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
 sudo chmod a+x ~/bin/repo
 cd /where/you/want/to/your/source-tree
 mkdir -p cm14/my_tmp
