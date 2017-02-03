@@ -73,7 +73,7 @@ Syncing (aka download) the sources
 ----------------------------------
 
 Shell command:
-#this takes some time; it's about 20GB to fetch
+#this takes some time; it's about 46GB to fetch
 repo sync
 
 Meanwhile check my-build and edit it to meet your needs.
