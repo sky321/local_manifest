@@ -58,8 +58,8 @@ git clone https://github.com/nvertigo/local_manifest.git
 cd local_manifest
 git checkout cm-14.1
 cd ../../.repo
-mkdir local_manifest
-cd local_manifest
+mkdir local_manifests
+cd local_manifests
 ln -s ../../my_tmp/local_manifest/oneplus3t.xml .
 # if you are on macos (aka darwin) skip the next command
 ln -s ../../my_tmp/local_manifest/zz-remove-unused.xml .
