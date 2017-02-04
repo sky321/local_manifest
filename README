@@ -64,7 +64,7 @@ ln -s ../../my_tmp/local_manifest/oneplus3t.xml .
 # if you are on macos (aka darwin) skip the next command
 ln -s ../../my_tmp/local_manifest/zz-remove-unused.xml .
 cd ../..
-ln -s my_tmp/my_build.sh ./my-build
+ln -s my_tmp/local_manifest/my_build.sh ./my-build
 # you will love "git lg1", I'm sure! So add the aliases to ~/.gitconfig
 cat my_tmp/local_manifest/gitconfig.example >>~/.gitconfig
 
