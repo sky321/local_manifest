@@ -37,9 +37,35 @@ https://source.android.com/source/initializing.html
 
 I assume you are using bash as shell.
 
-You need about 60 GB of diskspace to compile LineageOS plus
-that amount of space you configure ccache (compiler cache
-to speed up future buildings) for.
+
+Downloads, Sizes and Partitions
+-------------------------------
+As of the time of writing, February 2017, the download will take 52
+gigabyte.
+
+The whole Lineage directory after a full build will take 125GB. This
+includes the out/ directory, which is used for all the
+temporary output to build the ROM. The out/ directory itself is 47 GB
+The ccache - if emptied before and just filled for the build - will
+take 13GB.
+
+You need to use those numbers to create the apropriate partitions to
+allow you building. The easy way is to just make a 200GB Linux
+partition where you put everything on, including the operating system.
+This will work. But its not the best way.
+
+Since building android can take a really long time, you might want to
+do some optimizations.
+The best would be to have the source tree on one harddisk, out/ on
+another and ccache on a third. SSDs if possible. If you only have 2
+harddrives, put source and ccache on one, out/ on another. Keep in
+mind, another harddrive refers to a physical different harddrive and
+not just another partition on the same drive.
+
+Sure this very much depends on your personal setup and how much space
+you have available on each drive. You got the numbers, figure it out
+yourself. Leave some space though on each partition for optimizing the
+filesystem and future growth of the project.
 
 
 General preperation
@@ -73,7 +99,7 @@ Syncing (aka download) the sources
 ----------------------------------
 
 Shell command:
-#this takes some time; it's about 46GB to fetch
+#this takes some time; it's about 52GB to fetch
 repo sync
 
 Meanwhile check my-build and edit it to meet your needs.
