@@ -18,7 +18,6 @@
 <!-- get the proprietary vendor blobs -->
 
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-14.1" />
-  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
   <project name="nvertigo/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
 
 <!-- get qcom native Snapdragon llvm toolchain -->
