@@ -40,4 +40,15 @@
 
   <project path="external/busybox" name="android_external_busybox" remote="nvertigo" revision="cm-14.1" />
 
+<!-- temporary: https://review.lineageos.org/#/c/161826/: fetch the cafs from MI5Devs -->
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="mi5devs/android_hardware_qcom_audio" revision="cm-14.1-caf-8996-rebase" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_display" revision="cm-14.1-caf-8996-rebase" />
+  <project path="hardware/qcom/display-caf/msm8996" name="mi5devs/android_hardware_qcom_display" revision="cm-14.1-caf-8996-rebase" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <project path="hardware/qcom/media-caf/msm8996" name="mi5devs/android_hardware_qcom_media" revision="cm-14.1-caf-8996-rebase" />
+
 </manifest>
