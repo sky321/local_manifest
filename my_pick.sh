@@ -7,6 +7,4 @@ git fetch https://review.lineageos.org/LineageOS/android_hardware_qcom_audio ref
 popd
 
 #stop sim settings from crashing
-pushd packages/services/Telephony
-git revert --no-edit 3a782aa
-popd
+repopick -t remove_call_barring
