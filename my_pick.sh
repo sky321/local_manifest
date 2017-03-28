@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. build/envsetup.sh
 
 #temp fix for ogg/vorbis
 pushd hardware/qcom/audio-caf/msm8996
