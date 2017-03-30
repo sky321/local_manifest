@@ -36,4 +36,9 @@
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="aarch64-linux-android-4.9-kernel" remote="nvertigo" revision="master" />
 
+<!-- add Magisk -->
+  
+  <project name="nvertigo/android_vendor_magisk" path="vendor/magisk" remote="github" revision="master" />
+
+
 </manifest>
