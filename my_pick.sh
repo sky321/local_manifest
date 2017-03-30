@@ -12,5 +12,6 @@ repopick -t remove_call_barring
 
 #add Magisk
 pushd build
-wget https://github.com/nvertigo/android_build/commit/4bd296c062c8d17ec6e443c5fed46dc3c1813654.patch | git am
+wget https://github.com/nvertigo/android_build/commit/4bd296c062c8d17ec6e443c5fed46dc3c1813654.patch -O - | git am
 popd
+
