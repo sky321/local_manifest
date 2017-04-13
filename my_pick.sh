@@ -16,4 +16,6 @@ popd
 pushd frameworks/base
 wget https://github.com/nvertigo/android_frameworks_base/commit/5a48dd6bfec4bc3179e983e8fdd088c3bedeedfd.patch -O - | git am
 wget https://github.com/nvertigo/android_frameworks_base/commit/d3152578850575e64c12d85ac42b6d7a1e5d827d.patch -O - | git am
+#base: services: add config_fingerprintRemoveClientOnCancel
+wget https://github.com/nvertigo/android_frameworks_base/commit/9c1451948436cdaa3e8635b1f2f23bbe17691c0b.patch -O - | git am
 popd
