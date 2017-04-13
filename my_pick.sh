@@ -14,6 +14,6 @@ popd
 
 #microG
 pushd frameworks/base
-wget https://github.com/nvertigo/android_frameworks_base/commit/679fcdf4d1d7e8665a68da9911c3b053d8629080.patch -O - | git am
-wget https://github.com/nvertigo/android_frameworks_base/commit/a317b187a398b6a4456fe873aecdd9858d4a657b.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/5a48dd6bfec4bc3179e983e8fdd088c3bedeedfd.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/d3152578850575e64c12d85ac42b6d7a1e5d827d.patch -O - | git am
 popd
