@@ -17,3 +17,5 @@ wget https://github.com/nvertigo/android_frameworks_base/commit/ab2aa7fbb522e8b4
 #Allow location providers also outside of /system
 wget https://github.com/nvertigo/android_frameworks_base/commit/6408344bc9ef06dd264a5ad4431659e21ff675d5.patch -O - | git am
 popd
+
+repopick -t network-traffic
