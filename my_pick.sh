@@ -1,5 +1,23 @@
 #!/bin/bash
 
+# This script needs to know where you build root resides.
+# Set LAOSROOT accordingly, or it will not work.
+# LOASROOT has to be an absolute path!
+
+LAOSROOT=/mnt/export/data/src/cm14/
+
+# You need to clone https://github.com/LineageOMS/merge_script
+# LOMSDIR is the absolute path to where you cloned merge_script.
+
+LOMSDIR=/mnt/export/data/src/cm14/my_tmp/merge_oms
+
+# This is NOT synced by repo sync. So we take care of it:
+pushd ${LOMSDIR}
+git pull
+git status
+popd
+
+
 . build/envsetup.sh
 
 #add Magisk
@@ -19,3 +37,6 @@ wget https://github.com/nvertigo/android_frameworks_base/commit/6408344bc9ef06dd
 popd
 
 repopick -t network-traffic
+
+# get the LineageOMS commits:
+${LOMSDIR}/lineage_oms_merge.sh ${LAOSROOT}
