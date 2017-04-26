@@ -6,7 +6,7 @@
 
 LAOSROOT=/mnt/export/data/src/cm14/
 
-# You need to clone https://github.com/LineageOMS/merge_script
+# You need to clone https://github.com/nvertigo/merge_script
 # LOMSDIR is the absolute path to where you cloned merge_script.
 
 LOMSDIR=/mnt/export/data/src/cm14/my_tmp/merge_oms
