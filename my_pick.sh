@@ -31,9 +31,9 @@ popd
 pushd frameworks/base
 #microG
 #Add signature Spoofing permission
-wget https://github.com/nvertigo/android_frameworks_base/commit/ab2aa7fbb522e8b4a85772836345382d22e4ee13.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/07315b1fc6cf0ff013a88c53608817ea02109189.patch -O - | git am
 #Allow location providers also outside of /system
-wget https://github.com/nvertigo/android_frameworks_base/commit/6408344bc9ef06dd264a5ad4431659e21ff675d5.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/14f700ad41c6b3ad2d21d2311d66e74b20990b99.patch -O - | git am
 #DASH
 #indicate this
 wget https://github.com/nvertigo/android_frameworks_base/commit/afce974d9a456fd1e00a469b5ce9cddb811ccb93.patch -O - | git am
