@@ -49,7 +49,7 @@ read -p "Press ENTER..."
 pushd frameworks/base
 #DASH
 #BatteryService: add dash charging support
-wget https://github.com/nvertigo/android_frameworks_base/commit/afce974d9a456fd1e00a469b5ce9cddb811ccb93.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/70ae53640b1165cc9b12ec7d9d3e235a61b7a803.patch -O - | git am
 popd
 
 
