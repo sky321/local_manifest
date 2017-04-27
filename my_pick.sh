@@ -28,12 +28,15 @@ wget https://github.com/nvertigo/android_build/commit/63a305e3312595f73d4e037e66
 wget https://github.com/nvertigo/android_build/commit/5bd6eb23466b8c0b13142b20360fc6e4670e3ba5.patch -O - | git am
 popd
 
-#microG
 pushd frameworks/base
+#microG
 #Add signature Spoofing permission
 wget https://github.com/nvertigo/android_frameworks_base/commit/ab2aa7fbb522e8b4a85772836345382d22e4ee13.patch -O - | git am
 #Allow location providers also outside of /system
 wget https://github.com/nvertigo/android_frameworks_base/commit/6408344bc9ef06dd264a5ad4431659e21ff675d5.patch -O - | git am
+#DASH
+#indicate this
+wget https://github.com/nvertigo/android_frameworks_base/commit/afce974d9a456fd1e00a469b5ce9cddb811ccb93.patch -O - | git am
 popd
 
 repopick -t network-traffic
