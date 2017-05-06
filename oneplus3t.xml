@@ -42,8 +42,5 @@
   
   <project name="nvertigo/android_vendor_magisk" path="vendor/magisk" remote="github" revision="master" />
 
-<!-- Track ThemeInterfacer -->
-  <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
-
 
 </manifest>
