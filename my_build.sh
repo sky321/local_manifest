@@ -7,6 +7,14 @@ export CCACHE_DIR=~/.ccache
 export CCACHE_MAX_SIZE=50G
 ccache -M $CCACHE_MAX_SIZE
 
+# encapsulate the build's temp directory.
+# This way it's easier to clean up afterwards
+TMP=$(mktemp -dt)
+TMPDIR=$TMP
+TEMP=$TMP
+
+export TMP TMPDIR TEMP
+
 # we want all compiler messages in English
 export LANGUAGE=C
 
@@ -21,3 +29,6 @@ make -j9 ARCH=arm clean
 # and stderrout
 breakfast oneplus3t 2>&1 | tee breakfast.log && \
 brunch oneplus3t 2>&1 | tee make.log
+
+# remove all temp directories
+rm -r ${TMP}
