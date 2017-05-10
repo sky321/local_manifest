@@ -42,6 +42,11 @@ pushd frameworks/base
 wget https://github.com/nvertigo/android_frameworks_base/commit/0e35a53553f65710237d953bc5359ab94517018d.patch -O - | git am
 popd
 
+pushd frameworks/av
+#OnePlus OSS addition
+#CameraService: addition from OSS for OnePlusCamera (found by Kevin Mckee <kxzxxx@gmail.com>)
+wget https://github.com/nvertigo/android_frameworks_av/commit/0336495c64b5cd7f3085888a968791bde7ace41f.patch -O - | git am
+popd
 
 read -p "Press ENTER..."
 
