@@ -15,6 +15,9 @@ TEMP=$TMP
 
 export TMP TMPDIR TEMP
 
+#make sure jack-server is restarted in TMP
+prebuilts/sdk/tools/jack-admin kill-server
+
 # we want all compiler messages in English
 export LANGUAGE=C
 
