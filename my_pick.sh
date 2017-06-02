@@ -44,7 +44,7 @@ popd
 
 pushd frameworks/base
 #apply sultan's fix for home button
-wget https://raw.githubusercontent.com/sultanxda/patcher/146f43aef0804336006c1f6c7fdc9026f75cee7e/sultan/frameworks-base7.patch -O - | git am
+git fetch https://review.lineageos.org/LineageOS/android_frameworks_base refs/changes/03/168903/2 && git cherry-pick FETCH_HEAD
 popd
 
 pushd frameworks/av
