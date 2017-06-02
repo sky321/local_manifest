@@ -42,11 +42,6 @@ pushd frameworks/base
 wget https://github.com/nvertigo/android_frameworks_base/commit/0e35a53553f65710237d953bc5359ab94517018d.patch -O - | git am
 popd
 
-pushd frameworks/base
-#apply sultan's fix for home button
-git fetch https://review.lineageos.org/LineageOS/android_frameworks_base refs/changes/03/168903/2 && git cherry-pick FETCH_HEAD
-popd
-
 pushd frameworks/av
 #OnePlus OSS addition
 #CameraService: addition from OSS for OnePlusCamera (found by Kevin Mckee <kxzxxx@gmail.com>)
