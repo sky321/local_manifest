@@ -38,9 +38,4 @@
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
 
-<!-- add Magisk -->
-  
-  <project name="nvertigo/android_vendor_magisk" path="vendor/magisk" remote="github" revision="master" />
-
-
 </manifest>
