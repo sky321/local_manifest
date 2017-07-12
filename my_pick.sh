@@ -25,9 +25,9 @@ read -p "Press ENTER..."
 pushd frameworks/base
 #microG
 #Add signature Spoofing permission
-wget https://github.com/nvertigo/android_frameworks_base/commit/995cd65ea42897b7adb4ea0fa837bb199eebc5b2.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/14593c66716a869f9e5f7f310879c217167e4e67.patch -O - | git am
 #Allow location providers also outside of /system
-wget https://github.com/nvertigo/android_frameworks_base/commit/cca0a256a0b237d0df5a97a84c5ad23a7848b249.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/20c7e814afd59030f0020e66768d985f6ecd315c.patch -O - | git am
 popd
 
 read -p "Press ENTER..."
@@ -39,7 +39,7 @@ read -p "Press ENTER..."
 pushd frameworks/base
 #DASH
 #BatteryService: add dash charging support
-wget https://github.com/nvertigo/android_frameworks_base/commit/0e35a53553f65710237d953bc5359ab94517018d.patch -O - | git am
+wget https://github.com/nvertigo/android_frameworks_base/commit/8c170312ac7204853690d15769979d6f7bb57c3c.patch -O - | git am
 popd
 
 pushd frameworks/av
