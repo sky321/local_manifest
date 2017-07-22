@@ -48,6 +48,11 @@ pushd frameworks/av
 wget https://github.com/nvertigo/android_frameworks_av/commit/0336495c64b5cd7f3085888a968791bde7ace41f.patch -O - | git am
 popd
 
+pushd hardware/samsung
+# Chagallwifi: fix 100% cpu issue
+git fetch https://review.lineageos.org/LineageOS/android_hardware_samsung refs/changes/32/181432/1 && git cherry-pick FETCH_HEAD
+popd
+
 read -p "Press ENTER..."
 
 # get the LineageOMS commits:
