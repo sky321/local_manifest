@@ -38,4 +38,8 @@
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
 
+<!-- add modified busybox (does not install module links) -->
+
+  <project path="external/busybox" name="android_external_busybox" remote="nvertigo" revision="cm-14.1" />
+
 </manifest>
