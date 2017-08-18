@@ -40,12 +40,26 @@ pushd frameworks/base
 #DASH
 #BatteryService: add dash charging support
 wget https://github.com/nvertigo/android_frameworks_base/commit/8c170312ac7204853690d15769979d6f7bb57c3c.patch -O - | git am
+#Sultanxda: fingerprint speed up
+wget https://raw.githubusercontent.com/sultanxda/patcher/cm-14.1-oneplus3/sultan/frameworks-base2.patch -O - |git am
+
+read -p "Press ENTER..."
+
+#Sultanxda: signal strength
+wget https://raw.githubusercontent.com/sultanxda/patcher/cm-14.1-oneplus3/sultan/frameworks-base4.patch -O - |git am
 popd
 
 pushd frameworks/av
 #OnePlus OSS addition
 #CameraService: addition from OSS for OnePlusCamera (found by Kevin Mckee <kxzxxx@gmail.com>)
 wget https://github.com/nvertigo/android_frameworks_av/commit/0336495c64b5cd7f3085888a968791bde7ace41f.patch -O - | git am
+popd
+
+read -p "Press ENTER..."
+
+pushd packages/apps/LockClock
+#Sultanxda: fix LockClock wakelock
+wget https://raw.githubusercontent.com/sultanxda/patcher/cm-14.1-oneplus3/sultan/packages-apps-LockClock0.patch -O -|git am
 popd
 
 read -p "Press ENTER..."
