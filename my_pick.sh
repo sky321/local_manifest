@@ -62,6 +62,11 @@ pushd packages/apps/LockClock
 wget https://raw.githubusercontent.com/sultanxda/patcher/cm-14.1-oneplus3/sultan/packages-apps-LockClock0.patch -O -|git am
 popd
 
+pushd vendor/cm
+# Nvertigo's LOS builds become mature: Call me NLOS!
+wget https://github.com/nvertigo/android_vendor_cm/commit/9d7a2405d0a5fc3a48016c40bed68db0f27fc23d.patch -O - | git am
+popd
+
 read -p "Press ENTER..."
 
 # get the LineageOMS commits:
