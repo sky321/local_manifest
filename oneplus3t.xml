@@ -20,32 +20,4 @@
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-14.1" />
   <project name="nvertigo/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="141-eas" />
 
-<!-- get qcom native Snapdragon llvm toolchain -->
-
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_3.8/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="3.8.8" />
-
-<!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
-
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="nvertigo/arm-eabi-4.8" remote="github" revision="master" />
-
-  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="nvertigo/arm-linux-androideabi-4.9" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="nvertigo/arm-eabi-4.9" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="nvertigo/aarch64-linux-android-4.9-kernel" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="nvertigo/aarch64-linux-android-6.x" remote="bitbucket" revision="master" />
-
-<!-- add busybox and toybox: use busybox for broken network toys-->
-
-  <project path="external/busybox" name="nvertigo/android_external_busybox" remote="github" revision="cm-14.1" />
-  <remove-project name="LineageOS/android_external_toybox" />
-  <project path="external/toybox" name="nvertigo/android_external_toybox" remote="github" revision="cm-14.1" />
-
-<!-- VoxPopuli -->
-  <project path="device/voxpopuli" name="EAS-Project/android_device_voxpopuli" remote="github" revision="msm8996" />
-
 </manifest>
