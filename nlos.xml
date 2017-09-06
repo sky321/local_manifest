@@ -17,6 +17,9 @@
   <remove-project name="LineageOS/android_frameworks_native" />
   <project path="frameworks/native" name="nvertigo/android_frameworks_native" revision="nlos-14.1" />
 
+  <remove-project name="LineageOS/android_packages_apps_CMParts" />
+  <project path="packages/apps/CMParts" name="nvertigo/android_packages_apps_CMParts" revision="nlos-14.1" />
+
   <remove-project name="LineageOS/android_packages_apps_Contacts" />
   <project path="packages/apps/Contacts" name="nvertigo/android_packages_apps_Contacts" revision="nlos-14.1" />
 
@@ -49,6 +52,9 @@
 
   <remove-project name="LineageOS/android_vendor_cm" />
   <project path="vendor/cm" name="nvertigo/android_vendor_cm" revision="nlos-14.1" />
+
+  <remove-project name="LineageOS/cm_platform_sdk" />
+  <project path="vendor/cmsdk" name="nvertigo/cm_platform_sdk" revision="nlos-14.1" />
 
 <!-- add busybox and toybox: use busybox for broken network toys-->
 
