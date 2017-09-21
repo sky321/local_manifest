@@ -91,4 +91,7 @@
 
   <project path="packages/wallpapers/PhaseBeam" name="LineageOS/android_packages_wallpapers_PhaseBeam" revision="cm-14.1" />
 
+<!-- Track ThemeInterfacer -->
+    <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
 </manifest>
