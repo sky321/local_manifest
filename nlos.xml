@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="zx2c4"
+    fetch="https://git.zx2c4.com/" />
+
 <!-- get NLOS -->
 
   <project name="nvertigo/android_vendor_nlos" path="vendor/nlos" remote="github" revision="nlos-14.1" />
@@ -92,6 +95,9 @@
   <project path="packages/wallpapers/PhaseBeam" name="LineageOS/android_packages_wallpapers_PhaseBeam" revision="cm-14.1" />
 
 <!-- Track ThemeInterfacer -->
-    <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+  <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
+<!-- add WireGuard -->
+  <project remote="zx2c4" name="android_kernel_wireguard" path="kernel/wireguard" revision="master" sync-s="true" />
 
 </manifest>
