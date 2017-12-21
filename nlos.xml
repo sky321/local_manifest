@@ -59,6 +59,9 @@
   <remove-project name="LineageOS/android_vendor_cm" />
   <project path="vendor/cm" name="nvertigo/android_vendor_cm" revision="nlos-14.1" />
 
+  <remove-project name="LineageOS/android_vendor_codeaurora_telephony" />
+  <project path="vendor/codeaurora/telephony" name="nvertigo/android_vendor_codeaurora_telephony" revision="nlos-14.1" />
+
   <remove-project name="LineageOS/cm_platform_sdk" />
   <project path="vendor/cmsdk" name="nvertigo/cm_platform_sdk" revision="nlos-14.1" />
 
