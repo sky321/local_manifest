@@ -101,7 +101,4 @@
 <!-- Track ThemeInterfacer -->
   <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 
-<!-- add WireGuard -->
-  <project remote="zx2c4" name="android_kernel_wireguard" path="kernel/wireguard" revision="master" sync-s="true" />
-
 </manifest>
