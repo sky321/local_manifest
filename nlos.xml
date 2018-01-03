@@ -86,8 +86,6 @@
 
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="nvertigo/arm-eabi-4.9" remote="github" revision="master" />
 
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-caf" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="caf" revision="7d2224aa8b58d05df3b55b189df70c49d70b132f" />
-
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="nvertigo/aarch64-linux-android-6.x" remote="bitbucket" revision="master" />
