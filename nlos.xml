@@ -86,8 +86,6 @@
 
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="nvertigo/arm-eabi-4.9" remote="github" revision="master" />
 
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
-
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="nvertigo/aarch64-linux-android-6.x" remote="bitbucket" revision="master" />
 
 <!-- readd PhaseBeam LiveWallpaper -->
