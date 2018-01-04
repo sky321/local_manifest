@@ -72,10 +72,6 @@
   <remove-project name="LineageOS/android_external_toybox" />
   <project path="external/toybox" name="nvertigo/android_external_toybox" remote="github" revision="nlos-14.1" />
 
-<!-- get qcom native Snapdragon llvm toolchain -->
-
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_3.8/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="3.8.8" />
-
 <!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
 
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  />
