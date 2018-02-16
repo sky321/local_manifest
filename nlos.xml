@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<!-- get NLOS -->
 
-<!-- get qcom native Snapdragon llvm toolchain -->
+  <project name="nvertigo/android_vendor_nlos" path="vendor/nlos" remote="github" revision="nlos-15.1" />
 
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_3.8/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="4.0.2" />
-
-<!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
-
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="nvertigo/arm-eabi-4.8" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="nvertigo/arm-eabi-4.9" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="nvertigo/aarch64-linux-android-4.9-kernel" remote="github" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x" name="nvertigo/aarch64-linux-android-5.x" remote="bitbucket" revision="master" />
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="nvertigo/aarch64-linux-android-6.x" remote="bitbucket" revision="master" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-15.1" />
 
 </manifest>
