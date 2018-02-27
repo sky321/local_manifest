@@ -20,6 +20,9 @@
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-15.1" />
 
+  <remove-project name="LineageOS/android_packages_apps_WallpaperPicker" />
+  <project path="packages/apps/WallpaperPicker" name="nvertigo/android_packages_apps_NLOSWallpaperPicker" revision="nlos-15.1" />
+
 <!-- add busybox -->
 
   <project path="external/busybox" name="nvertigo/android_external_busybox" remote="github" revision="nlos-15.1" />
