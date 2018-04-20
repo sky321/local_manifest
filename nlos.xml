@@ -5,11 +5,17 @@
 
   <project name="nvertigo/android_vendor_nlos" path="vendor/nlos" remote="github" revision="nlos-15.1" />
 
+  <remove-project name="LineageOS/android_device_oppo_common" />
+  <project path="device/oppo/common" name="nvertigo/android_device_oppo_common" revision="nlos-15.1" />
+
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="nvertigo/android_frameworks_base" revision="nlos-15.1" />
 
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-15.1" />
+
+  <remove-project name="LineageOS/android_packages_apps_LockClock" />
+  <project path="packages/apps/LockClock" name="nvertigo/android_packages_apps_LockClock" revision="nlos-15.1" />
 
   <remove-project name="LineageOS/android_packages_apps_WallpaperPicker" />
   <project path="packages/apps/WallpaperPicker" name="nvertigo/android_packages_apps_NLOSWallpaperPicker" revision="nlos-15.1" />
