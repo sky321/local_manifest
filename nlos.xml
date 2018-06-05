@@ -11,6 +11,9 @@
   <remove-project name="LineageOS/android_build" />
   <project path="build/make" name="nvertigo/android_build" revision="nlos-15.1" />
 
+  <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <project path="device/qcom/sepolicy" name="nvertigo/android_device_qcom_sepolicy" revision="nlos-15.1" />
+
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="nvertigo/android_frameworks_base" revision="nlos-15.1" />
 
