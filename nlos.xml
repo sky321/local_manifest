@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org/" />
+
 <!-- get NLOS -->
 
   <project name="nvertigo/android_vendor_nlos" path="vendor/nlos" remote="github" revision="nlos-15.1" />
@@ -29,5 +32,9 @@
 <!-- add busybox -->
 
   <project path="external/busybox" name="nvertigo/android_external_busybox" remote="github" revision="nlos-15.1" />
+
+<!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
+
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
 
 </manifest>
