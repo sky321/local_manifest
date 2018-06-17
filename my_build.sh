@@ -30,8 +30,8 @@ make -j9 ARCH=arm clean
 
 # fire up the building process and also log stdout
 # and stderrout
-breakfast oneplus3t 2>&1 | tee breakfast.log && \
-brunch oneplus3t 2>&1 | tee make.log
+breakfast oneplus3 2>&1 | tee breakfast.log && \
+brunch oneplus3 2>&1 | tee make.log
 
 # remove all temp directories
 rm -r ${TMP}
