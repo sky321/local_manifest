@@ -1,13 +1,14 @@
-This is the local manifest for Nvertigo/LineageOS cm-14.1 for oneplus3t.
+This is the local manifest for NLOS nlos-15.1 for oneplus3/t.
 
-The repo is optimized for oneplus3t and does NOT work
-for oneplus3.
+The repo is optimized for oneplus3t.
 
 git clone this wherever you want and make symblic links
 to .repo/local_manifest for xml file/files.
 
 oneplus3t.xml: imports all neccessary files (including
-               blobs and toolchains) to build laos for op3t
+               blobs and toolchains) to build los for op3
+
+nlos.xml: imports all nlos additions
 
 zz-remove-unused.xml: removes darwin build environment;
                       it's not mandatory, but makes syncs
@@ -76,13 +77,14 @@ Shell commands:
 sudo curl https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
 sudo chmod a+x /usr/local/bin/repo
 cd /where/you/want/to/your/source-tree
-mkdir -p cm14/my_tmp
-cd cm14
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+mkdir -p los15/my_tmp
+cd los15
+repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
+repo sync
 cd my_tmp
 git clone https://github.com/nvertigo/local_manifest.git
 cd local_manifest
-git checkout cm-14.1
+git checkout lineage-15.1
 cd ../../.repo
 mkdir local_manifests
 cd local_manifests
