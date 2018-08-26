@@ -48,4 +48,9 @@
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
 
+<!-- use Omni's webview prebuilts for now -->
+
+  <remove-project name="LineageOS/android_external_chromium-webview" />
+  <project path="external/chromium-webview" name="omnirom/android_external_chromium-webview" revision="android-8.1" />
+
 </manifest>
