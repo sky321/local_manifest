@@ -16,6 +16,13 @@ zz-remove-unused.xml: removes darwin build environment;
 
 my_build.sh: example of a simple build script
 
+current.pick.sh: this script handles all currently 
+                 cherry-picked additions for NLOS, which are 
+		 not merged in our own branches
+
+update_repos.sh: this script rebases all own repos on the
+                 lineageos's counterparts
+
 gitconfig-example: two usefull aliases (those saved my a** many times)
 
 
