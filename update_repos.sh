@@ -13,6 +13,7 @@ packages/apps/Gallery2
 packages/apps/LockClock
 packages/apps/Settings
 packages/apps/WallpaperPicker
+system/nfc
 system/sepolicy
 vendor/lineage"
 

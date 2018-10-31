@@ -37,6 +37,9 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="nvertigo/android_packages_apps_Settings" revision="nlos-15.1" />
 
+  <remove-project name="LineageOS/android_system_nfc" />
+  <project path="system/nfc" name="nvertigo/android_system_nfc" revision="nlos-15.1" />
+
   <remove-project name="LineageOS/android_system_sepolicy" />
   <project path="system/sepolicy" name="nvertigo/android_system_sepolicy" revision="nlos-15.1" />
 
