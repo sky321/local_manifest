@@ -22,6 +22,9 @@
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <project path="device/qcom/sepolicy" name="nvertigo/android_device_qcom_sepolicy" revision="nlos-15.1" />
 
+  <remove-project name="LineageOS/android_external_libtar" />
+  <project path="external/libtar" name="nvertigo/android_external_libtar" revision="nlos-15.1" />
+
   <remove-project name="LineageOS/android_frameworks_av" />
   <project path="frameworks/av" name="nvertigo/android_frameworks_av" revision="nlos-15.1" />
 
