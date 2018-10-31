@@ -5,6 +5,7 @@ GITUSER="nvertigo"
 REPOS="
 build/make
 device/qcom/sepolicy
+external/libtar
 frameworks/av
 frameworks/base
 frameworks/native
