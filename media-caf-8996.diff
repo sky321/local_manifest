@@ -1,0 +1,16 @@
+
+project hardware/qcom/media-caf/msm8996/
+diff --git a/hardware/qcom/media-caf/msm8996/mm-video-v4l2/vidc/vdec/src/omx_vdec_v4l2.cpp b/hardware/qcom/media-caf/msm8996/mm-video-v4l2/vidc/vdec/src/omx_vdec_v4l2.cpp
+index eae1168ec..8a9753b3e 100644
+--- a/hardware/qcom/media-caf/msm8996/mm-video-v4l2/vidc/vdec/src/omx_vdec_v4l2.cpp
++++ b/hardware/qcom/media-caf/msm8996/mm-video-v4l2/vidc/vdec/src/omx_vdec_v4l2.cpp
+@@ -13577,7 +13577,8 @@ OMX_ERRORTYPE omx_vdec::describeColorFormat(OMX_PTR pParam) {
+     DescribeColorFormatParams *params = (DescribeColorFormatParams*)pParam;
+ 
+     MediaImage *img = &(params->sMediaImage);
+-    switch(params->eColorFormat) {
++    int z = params->eColorFormat;
++    switch(z) {
+         case QOMX_COLOR_FORMATYUV420PackedSemiPlanar32m:
+         {
+             img->mType = MediaImage::MEDIA_IMAGE_TYPE_YUV;
