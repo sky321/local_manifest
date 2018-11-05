@@ -20,4 +20,11 @@ repopick https://review.lineageos.org/#/c/LineageOS/android_frameworks_base/+/22
 repopick 219299 -P packages/apps/Settings/
 
 #libdisplayconfig: Depend on vendor.display.config@1.0_vendor
-repopick 232229 232228 232227
+repopick 232229 -P hardware/qcom/display-caf/msm8996/
+repopick 232228 -P hardware/qcom/display-caf/sdm845/
+repopick 232227 -P hardware/qcom/display-caf/msm8998/
+
+#Merge tag 'LA.UM.6.6.r1-09900-89xx.0' 
+repopick 232913 -P hardware/qcom/audio-caf/msm8996/
+repopick 232914 -P hardware/qcom/display-caf/msm8996/
+repopick 232916 -P hardware/qcom/media-caf/msm8996/
