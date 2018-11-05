@@ -70,4 +70,9 @@
 
   <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="6.0.9" />
 
+<!-- use Omni's webview prebuilts for now -->
+
+  <remove-project name="LineageOS/android_external_chromium-webview" />
+  <project path="external/chromium-webview" name="omnirom/android_external_chromium-webview" revision="android-8.1" />
+
 </manifest>
