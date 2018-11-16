@@ -62,7 +62,7 @@
 
   <project path="external/busybox" name="nvertigo/android_external_busybox" remote="github" revision="nlos-15.1" />
 
-<!-- replace laos shipped prebuilt toolchains with UBERTC/linaro ones -->
+<!-- add newer plain gnu toolchains -->
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
 
