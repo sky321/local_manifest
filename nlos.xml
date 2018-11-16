@@ -66,6 +66,8 @@
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
 
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-8.2" name="nvertigo/aarch64-linux-android-8.2" remote="bitbucket" revision="master" />
+
 <!-- get qcom native Snapdragon llvm toolchain -->
 
   <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="6.0.9" />
