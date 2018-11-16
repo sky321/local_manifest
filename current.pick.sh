@@ -14,6 +14,10 @@ repopick 213836
 repopick -f 217171
 
 #battery customisation
+#revert last translation import for now because of reformating the indents
+pushd packages/apps/LineageParts
+git revert --no-edit 0f16505
+popd
 repopick 220407 220422
 repopick https://review.lineageos.org/#/c/LineageOS/android_packages_apps_LineageParts/+/221756/3 -P packages/apps/LineageParts
 repopick https://review.lineageos.org/#/c/LineageOS/android_frameworks_base/+/221716/18 -P frameworks/base/
