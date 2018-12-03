@@ -26,3 +26,6 @@ repopick 232916 -P hardware/qcom/media-caf/msm8996/
 
 # power: Drop default POWER_HINT_INTERACTION routine
 repopick 235178
+
+# lineage-sdk: Start Weather service in onUnlockUser.
+repopick 235659
