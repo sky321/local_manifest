@@ -1,10 +1,16 @@
 #!/bin/bash
 
 BUILD_ROOT=/usr/local/src/los15
+LOCAL_MANIFEST=my_tmp/local_manifest
+
+export BUILD_ROOT LOCAL_MANIFEST
 
 cd ${BUILD_ROOT}
 
 source build/envsetup.sh
+
+# 2 patches to allow to build with sdclang
+${LOCAL_MANIFEST}/sdclang-patch.sh
 
 #tristate button & Gallery2
 repopick 215212 -f
