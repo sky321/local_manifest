@@ -35,3 +35,6 @@ repopick 235178
 
 # lineage-sdk: Start Weather service in onUnlockUser.
 repopick 235659
+
+# mwrge android-8.1.0_r52
+${LOCAL_MANIFEST}/android-8.1.0_r52.sh
