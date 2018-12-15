@@ -1,0 +1,148 @@
+This is the local manifest for NLOS nlos-16.0 for oneplus3/t.
+
+The repo is optimized for oneplus3t.
+
+git clone this wherever you want and make symblic links
+to .repo/local_manifest for xml file/files.
+
+oneplus3t.xml: imports all neccessary files (including
+               blobs and toolchains) to build los for op3
+
+nlos.xml: imports all nlos additions
+
+zz-remove-unused.xml: removes darwin build environment;
+                      it's not mandatory, but makes syncs
+		      smaller
+
+my_build.sh: example of a simple build script
+
+current.pick.sh: this script handles all currently 
+                 cherry-picked additions for NLOS, which are 
+		 not merged in our own branches
+
+update_repos.sh: this script rebases all own repos on the
+                 lineageos's counterparts
+
+gitconfig-example: two usefull aliases (those saved my a** many times)
+
+
+How to build this from source (this part of the README is still beta)
+=====================================================================
+
+This is more a step by step guide, then a HOWTO. To understand
+what this all is about, try to learn as much as possible on
+git, gnu-make, bash, c, c++, java, python, repo, android and 
+linux.
+
+
+Prerequisites
+-------------
+
+Setup your build environment for the linux distribution of choice.
+There are quite some tutorials around; as general starting 
+point you may want to read:
+https://source.android.com/source/initializing.html
+
+I assume you are using bash as shell.
+
+
+Downloads, Sizes and Partitions
+-------------------------------
+As of the time of writing, February 2017, the download will take 52
+gigabyte.
+
+The whole Lineage directory after a full build will take 125GB. This
+includes the out/ directory, which is used for all the
+temporary output to build the ROM. The out/ directory itself is 47 GB
+The ccache - if emptied before and just filled for the build - will
+take 13GB.
+
+You need to use those numbers to create the apropriate partitions to
+allow you building. The easy way is to just make a 200GB Linux
+partition where you put everything on, including the operating system.
+This will work. But its not the best way.
+
+Since building android can take a really long time, you might want to
+do some optimizations.
+The best would be to have the source tree on one harddisk, out/ on
+another and ccache on a third. SSDs if possible. If you only have 2
+harddrives, put source and ccache on one, out/ on another. Keep in
+mind, another harddrive refers to a physical different harddrive and
+not just another partition on the same drive.
+
+Sure this very much depends on your personal setup and how much space
+you have available on each drive. You got the numbers, figure it out
+yourself. Leave some space though on each partition for optimizing the
+filesystem and future growth of the project.
+
+
+General preperation
+-------------------
+
+Shell commands:
+# get the repo command; put it in some directory in your $PATH
+sudo curl https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
+sudo chmod a+x /usr/local/bin/repo
+cd /where/you/want/to/your/source-tree
+mkdir -p los16/my_tmp
+cd los16
+repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
+repo sync
+cd my_tmp
+git clone https://github.com/nvertigo/local_manifest.git
+cd local_manifest
+git checkout lineage-16.0
+cd ../../.repo
+mkdir local_manifests
+cd local_manifests
+ln -s ../../my_tmp/local_manifest/oneplus3t.xml .
+ln -s ../../my_tmp/local_manifest/nlos.xml .
+# if you are on macos (aka darwin) skip the next command
+ln -s ../../my_tmp/local_manifest/zz-remove-unused.xml .
+cd ../..
+ln -s my_tmp/local_manifest/my_build.sh ./my-build
+# you will love "git lg1", I'm sure! So add the aliases to ~/.gitconfig
+cat my_tmp/local_manifest/gitconfig.example >>~/.gitconfig
+
+
+Syncing (aka download) the sources
+----------------------------------
+
+Shell command:
+#this takes some time; it's about 52GB to fetch
+repo sync
+
+Meanwhile check my-build and edit it to meet your needs.
+
+When the sync has finished, adjust TARGET_UNOFFICIAL_BUILD_ID
+in device/oneplus/oneplus3t/lineage.mk
+
+Shell commands:
+# just to understand; the next three commands are not part
+# of the build process
+pushd device/oneplus/oneplus3t
+git lg1
+popd
+
+
+Building LineageOS
+------------------
+
+The example build script calls "make clean" before each build. On
+the first build after "repo sync" it doesn't make a differencei,
+because your out dir does not exist at all. If you decide to 
+comment that out, remember to comment it in again after your next
+"repo sync" to make sure, everything is build from the updated
+sources.
+
+Shell command:
+./my-build
+
+If everything worked wirhout errors, you will get a flashable zip in
+out/target/product/oneplus3t/
+
+If not, check make.log for errors.
+
+Congrats, you have just build your own rom!
+
+Happy flashing!

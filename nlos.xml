@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org/" />
+
+<!-- get NLOS -->
+
+  <project name="nvertigo/android_vendor_nlos" path="vendor/nlos" remote="github" revision="nlos-16.0" />
+
+  <remove-project name="LineageOS/android_build" />
+  <project path="build/make" name="nvertigo/android_build" revision="nlos-16.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="nvertigo/android_frameworks_base" revision="nlos-16.0" />
+
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="nvertigo/android_packages_apps_Settings" revision="nlos-16.0" />
+
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-16.0" />
+
+<!-- add newer plain gnu toolchains -->
+
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
+
+</manifest>
