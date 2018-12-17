@@ -51,3 +51,6 @@ repopick 232198 -P packages/apps/Settings
 
 # pie-network-traffic
 repopick -t pie-network-traffic -P frameworks/base
+
+# Sounds: Squashed cleanup of sound files
+repopick 236765 -P fameworks/base
