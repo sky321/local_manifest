@@ -57,3 +57,6 @@ repopick 236765 -P frameworks/base
 
 # SDCLANG-6: fix declaration
 repopick 219760 -P system/nfc/
+
+# Performance: Memory Optimizations.
+repopick 229612 -P frameworks/base
