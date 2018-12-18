@@ -22,9 +22,6 @@ repopick 235128 -P frameworks/base
 # common: Allow init to relabel I/O sched tuning nodes
 repopick 235402
 
-# libcameraservice: force specific cam id for google face unlock
-repopick 234980
-
 # lineage-sdk: Start Weather service in onUnlockUser.
 repopick 235659 -P lineage-sdk/
 
