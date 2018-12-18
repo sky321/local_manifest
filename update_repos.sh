@@ -7,6 +7,7 @@ build/make
 frameworks/base
 hardware/qcom/power
 packages/apps/Settings
+packages/apps/WallpaperPicker
 vendor/lineage"
 
 for i in $REPOS; do

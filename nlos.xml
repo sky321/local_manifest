@@ -28,6 +28,9 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="nvertigo/android_packages_apps_Settings" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_packages_apps_WallpaperPicker" />
+  <project path="packages/apps/WallpaperPicker" name="nvertigo/android_packages_apps_NLOSWallpaperPicker" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-16.0" />
 
