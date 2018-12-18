@@ -31,6 +31,10 @@
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-16.0" />
 
+<!-- add busybox -->
+
+  <project path="external/busybox" name="nvertigo/android_external_busybox" remote="github" revision="nlos-16.0" />
+
 <!-- add newer plain gnu toolchains -->
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.3" name="nvertigo/aarch64-linux-android-7.3" remote="bitbucket" revision="master" />
