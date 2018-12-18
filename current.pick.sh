@@ -53,7 +53,7 @@ repopick 232198 -P packages/apps/Settings
 repopick -t pie-network-traffic -P frameworks/base
 
 # Sounds: Squashed cleanup of sound files
-repopick 236765 -P fameworks/base
+repopick 236765 -P frameworks/base
 
 # SDCLANG-6: fix declaration
 repopick 219760 -P system/nfc/
