@@ -19,6 +19,9 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <remove-project name="LineageOS/android_hardware_qcom_power" />
+  <project path="hardware/qcom/power" name="nvertigo/android_hardware_qcom_power" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="nvertigo/android_frameworks_base" revision="nlos-16.0" />
 

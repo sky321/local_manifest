@@ -5,6 +5,7 @@ GITUSER="nvertigo"
 REPOS="
 build/make
 frameworks/base
+hardware/qcom/power
 packages/apps/Settings
 vendor/lineage"
 
