@@ -54,3 +54,6 @@ repopick -t pie-network-traffic -P frameworks/base
 
 # Sounds: Squashed cleanup of sound files
 repopick 236765 -P fameworks/base
+
+# SDCLANG-6: fix declaration
+repopick 219760 -P system/nfc/
