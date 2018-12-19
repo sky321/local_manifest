@@ -57,3 +57,6 @@ repopick 219760 -P system/nfc/
 
 # Performance: Memory Optimizations.
 repopick 229612 -P frameworks/base
+
+# configpanel: replace "Alarms only" with "Vibration".
+repopick 236894 -P frameworks/base
