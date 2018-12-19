@@ -60,3 +60,7 @@ repopick 229612 -P frameworks/base
 
 # configpanel: replace "Alarms only" with "Vibration".
 repopick 236894 -P frameworks/base
+
+# pie-hide-night-display
+repopick 229166 -P frameworks/base
+repopick 229167 -P packages/apps/Settings
