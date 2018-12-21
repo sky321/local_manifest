@@ -64,3 +64,6 @@ repopick 236894 -P frameworks/base
 # pie-hide-night-display
 repopick 229166 -P frameworks/base
 repopick 229167 -P packages/apps/Settings
+
+# SystemUI: allow devices override audio panel location
+repopick 236982 -P frameworks/base
