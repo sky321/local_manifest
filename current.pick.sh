@@ -67,3 +67,6 @@ repopick 229167 -P packages/apps/Settings
 
 # SystemUI: allow devices override audio panel location
 repopick 236982 -P frameworks/base
+
+# power: Handle launch and interaction hints for perf HAL platforms
+repopick 237002 -P hardware/qcom/power/
