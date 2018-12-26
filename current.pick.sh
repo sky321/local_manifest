@@ -55,9 +55,6 @@ repopick 236765 -P frameworks/base
 # SDCLANG-6: fix declaration
 repopick 219760 -P system/nfc/
 
-# Performance: Memory Optimizations.
-repopick 229612 -P frameworks/base
-
 # configpanel: replace "Alarms only" with "Vibration".
 repopick 236894
 
