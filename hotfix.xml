@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="packages/apps/Snap" name="LineageOS/android_packages_apps_Snap" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
   <project path="system/extras/su" name="LineageOS/android_system_extras_su" />
 </manifest>
