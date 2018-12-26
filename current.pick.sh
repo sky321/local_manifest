@@ -60,3 +60,6 @@ repopick 236982 -P frameworks/base -f
 
 # power: Handle launch and interaction hints for perf HAL platforms
 repopick 237002 -P hardware/qcom/power/
+
+# op3: Add priv-app permissions whitelist from LA.UM.7.6.r1-03900-89xx.0
+repopick 237181 -P device/oneplus/oneplus3
