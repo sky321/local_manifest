@@ -56,7 +56,7 @@ repopick 236765 -P frameworks/base
 repopick 219760 -P system/nfc/
 
 # SystemUI: allow devices override audio panel location
-repopick 236982 -P frameworks/base
+repopick 236982 -P frameworks/base -f
 
 # power: Handle launch and interaction hints for perf HAL platforms
 repopick 237002 -P hardware/qcom/power/
