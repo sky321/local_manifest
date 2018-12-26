@@ -55,9 +55,6 @@ repopick 236765 -P frameworks/base
 # SDCLANG-6: fix declaration
 repopick 219760 -P system/nfc/
 
-# configpanel: replace "Alarms only" with "Vibration".
-repopick 236894
-
 # pie-hide-night-display
 repopick 229166 -P frameworks/base
 repopick 229167 -P packages/apps/Settings
