@@ -55,10 +55,6 @@ repopick 236765 -P frameworks/base
 # SDCLANG-6: fix declaration
 repopick 219760 -P system/nfc/
 
-# pie-hide-night-display
-repopick 229166 -P frameworks/base
-repopick 229167 -P packages/apps/Settings
-
 # SystemUI: allow devices override audio panel location
 repopick 236982 -P frameworks/base
 
