@@ -63,3 +63,6 @@ repopick 237002 -P hardware/qcom/power/
 
 # op3: Add priv-app permissions whitelist from LA.UM.7.6.r1-03900-89xx.0
 repopick 237181 -P device/oneplus/oneplus3
+
+# op3: Add QCOM's WFD implementation
+repopick 237182 -P device/oneplus/oneplus3
