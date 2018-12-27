@@ -19,6 +19,9 @@ repopick 234325 -P frameworks/base
 # Crash app on foreground service notification error
 repopick 235128 -P frameworks/base
 
+# common: Expand labeling of sysfs_vibrator nodes using genfscon
+repopick 234613
+
 # common: Allow init to relabel I/O sched tuning nodes
 repopick 235402
 
