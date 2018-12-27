@@ -22,6 +22,9 @@ repopick 235128 -P frameworks/base
 # common: Expand labeling of sysfs_vibrator nodes using genfscon
 repopick 234613
 
+# common: Label and allow access over LiveDisplay sysfs nodes
+repopick 234837
+
 # common: Allow init to relabel I/O sched tuning nodes
 repopick 235402
 
