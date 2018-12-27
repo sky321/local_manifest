@@ -6,6 +6,7 @@ REPOS="
 build/make
 frameworks/base
 hardware/qcom/power
+packages/apps/PackageInstaller
 packages/apps/Settings
 packages/apps/WallpaperPicker
 vendor/lineage"

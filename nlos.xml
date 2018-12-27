@@ -25,6 +25,9 @@
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="nvertigo/android_frameworks_base" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+  <project path="packages/apps/PackageInstaller" name="nvertigo/android_packages_apps_PackageInstaller" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="nvertigo/android_packages_apps_Settings" revision="nlos-16.0" />
 
