@@ -72,3 +72,7 @@ repopick 237181 -P device/oneplus/oneplus3
 
 # op3: Add QCOM's WFD implementation
 repopick 237182 -P device/oneplus/oneplus3
+
+# pie-qcom-wfd
+repopick -t pie-qcom-wfd -e 237206,237194,237173 -P frameworks/base/
+repopick 237173 237194 237206
