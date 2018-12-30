@@ -76,3 +76,6 @@ repopick 237182 -P device/oneplus/oneplus3
 repopick -t pie-qcom-wfd -e 237206,237194,237173,237352 -P frameworks/base/
 repopick 237173 237194 237206
 repopick 237352 -P vendor/lineage/
+
+# Allow adjusting screen density to smaller sizes.
+repopick 226176 -P frameworks/base/
