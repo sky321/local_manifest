@@ -10,9 +10,8 @@ cd ${BUILD_ROOT}
 source build/envsetup.sh
 
 # FDE
-repopick -t pie-hw-fde -e 226123,226125,226126,226398,226399
-repopick 226398 226399 -P frameworks/base
-repopick 226123 226125 226126 -P vendor/lineage/
+repopick -t pie-legacy-hw-fde -e 226125,226126
+repopick 226125 226126 -P vendor/lineage/
 repopick -t pie-fde-crash-fix -e 234325,235127,234395
 repopick 234325 -P frameworks/base
 
