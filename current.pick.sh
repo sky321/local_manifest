@@ -76,3 +76,8 @@ repopick 237182 -P device/oneplus/oneplus3
 repopick -t pie-qcom-wfd -e 237206,237194,237173,237352 -P frameworks/base/
 repopick 237173 237194 237206
 repopick 237352 -P vendor/lineage/
+
+# revert "AOSP/Messaging: bump targetSDK to 28 — Raman Tenneti"
+pushd packages/apps/Messaging
+git revert --no-edit 931ae31
+popd
