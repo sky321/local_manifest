@@ -66,6 +66,12 @@ repopick -t pie-qcom-wfd -e 237206,237194,237173,237352 -P frameworks/base/
 repopick 237173 237194 237206
 repopick 237352 -P vendor/lineage/
 
+# pie-msim-ringtones
+repopick -t pie-msim-ringtones -e 233633,233634,237209
+repopick 233633 -P frameworks/base/
+repopick 233634 -P packages/apps/Settings/
+repopick 237209 -P vendor/lineage/
+
 # revert "AOSP/Messaging: bump targetSDK to 28 — Raman Tenneti"
 pushd packages/apps/Messaging
 git revert --no-edit 931ae31
