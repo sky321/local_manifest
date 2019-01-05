@@ -4,6 +4,7 @@ GITUSER="nvertigo"
 
 REPOS="
 build/make
+build/soong
 frameworks/base
 hardware/qcom/power
 packages/apps/PackageInstaller

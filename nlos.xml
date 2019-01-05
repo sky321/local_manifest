@@ -19,6 +19,12 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="nvertigo/android_build_soong" revision="nlos-16.0" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
   <remove-project name="LineageOS/android_hardware_qcom_power" />
   <project path="hardware/qcom/power" name="nvertigo/android_hardware_qcom_power" revision="nlos-16.0" />
 
