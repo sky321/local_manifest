@@ -3,6 +3,7 @@
 GITUSER="nvertigo"
 
 REPOS="
+art
 build/make
 build/soong
 frameworks/base
