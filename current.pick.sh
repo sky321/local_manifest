@@ -40,11 +40,6 @@ repopick -t pie-battery-styles -e 221716,232663
 repopick 232663 -P vendor/lineage
 repopick 221716 -P frameworks/base/
 
-# pie-privacy-guard
-repopick -t pie-privacy-guard -e 232197,232198
-repopick 232197 -P frameworks/base/
-repopick 232198 -P packages/apps/Settings
-
 # pie-network-traffic
 repopick -t pie-network-traffic -P frameworks/base
 
