@@ -24,9 +24,6 @@ repopick 234837
 # common: Allow init to relabel I/O sched tuning nodes
 repopick 235402
 
-# lineage-sdk: Start Weather service in onUnlockUser.
-repopick 235659 -P lineage-sdk/
-
 # pie linked volume
 repopick 235978 236184 -P packages/apps/Settings
 repopick 235986 -P frameworks/base
