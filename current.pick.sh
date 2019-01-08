@@ -12,9 +12,6 @@ source build/envsetup.sh
 # Crash app on foreground service notification error
 repopick 235128 -P frameworks/base -f
 
-# common: Allow init to relabel I/O sched tuning nodes
-repopick 235402
-
 # pie linked volume
 repopick 235978 236184 -P packages/apps/Settings
 repopick 235986 -P frameworks/base
