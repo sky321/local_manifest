@@ -10,7 +10,7 @@ cd ${BUILD_ROOT}
 source build/envsetup.sh
 
 # Crash app on foreground service notification error
-repopick 235128 -P frameworks/base
+repopick 235128 -P frameworks/base -f
 
 # common: Label and allow access over LiveDisplay sysfs nodes
 repopick 234837
