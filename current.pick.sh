@@ -44,7 +44,7 @@ repopick 237181 -P device/oneplus/oneplus3
 
 # pie-qcom-wfd
 repopick -t pie-qcom-wfd -e 237206,237194,237173,237352,237174 -P frameworks/base/
-repopick 237173 237194 237206
+repopick 237173 237206
 repopick 237352 -P vendor/lineage/
 
 # pie-msim-ringtones
