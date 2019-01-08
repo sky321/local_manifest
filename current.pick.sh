@@ -12,9 +12,6 @@ source build/envsetup.sh
 # Crash app on foreground service notification error
 repopick 235128 -P frameworks/base
 
-# common: Expand labeling of sysfs_vibrator nodes using genfscon
-repopick 234613
-
 # common: Label and allow access over LiveDisplay sysfs nodes
 repopick 234837
 
