@@ -9,9 +9,6 @@ cd ${BUILD_ROOT}
 
 source build/envsetup.sh
 
-# FDE
-repopick -t pie-fde-crash-fix -e 234325,235127,234395,234317
-
 # Crash app on foreground service notification error
 repopick 235128 -P frameworks/base
 
