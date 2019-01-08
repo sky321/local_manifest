@@ -28,6 +28,9 @@
   <remove-project name="LineageOS/android_art" />
   <project path="art" name="nvertigo/android_art" revision="nlos-16.0" />
 
+  <remove-project name="platform/external/chromium-webview" />
+  <project path="external/chromium-webview" name="nvertigo/android_external_chromium-webview" clone-depth="1" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_hardware_qcom_power" />
   <project path="hardware/qcom/power" name="nvertigo/android_hardware_qcom_power" revision="nlos-16.0" />
 
