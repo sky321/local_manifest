@@ -56,6 +56,9 @@ repopick 237209 -P vendor/lineage/
 # config: Add Deskclock to power whitelist
 repopick 238057 -P vendor/lineage/
 
+# livedisplay: Update FOSS status prop for Pie
+repopick 238431
+
 # revert "AOSP/Messaging: bump targetSDK to 28 — Raman Tenneti"
 pushd packages/apps/Messaging
 git revert --no-edit 931ae31
