@@ -45,6 +45,9 @@ repopick 237770 -P hardware/qcom/power/
 # power: Handle launch and interaction hints for perf HAL platforms
 repopick 237002 -P hardware/qcom/power/
 
+# power: Build with with BOARD_VNDK_VERSION
+repopick 237771 -P hardware/qcom/power/
+
 # op3: Add priv-app permissions whitelist from LA.UM.7.6.r1-03900-89xx.0
 repopick 237181 -P device/oneplus/oneplus3
 
