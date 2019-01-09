@@ -59,6 +59,9 @@ repopick 238057 -P vendor/lineage/
 # op3: Update FOSS props for Pie
 repopick 238432 -P device/oneplus/oneplus3/
 
+# softap: sdk: Add 'vendor.' prefix to wlan.driver.config
+repopick 237859
+
 # revert "AOSP/Messaging: bump targetSDK to 28 — Raman Tenneti"
 pushd packages/apps/Messaging
 git revert --no-edit 931ae31
