@@ -69,3 +69,6 @@ repopick 238057 -P vendor/lineage/
 
 # Revert "AOSP/Messaging: bump targetSDK to 28"
 repopick 238551
+
+# Disable art debug and enable minimize debug info
+repopick 237957 -P vendor/lineage/
