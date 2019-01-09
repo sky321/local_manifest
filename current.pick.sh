@@ -58,3 +58,6 @@ repopick 238057 -P vendor/lineage/
 
 # softap: sdk: Add 'vendor.' prefix to wlan.driver.config
 repopick 237859
+
+# Revert "AOSP/Messaging: bump targetSDK to 28"
+repopick 238551
