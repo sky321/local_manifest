@@ -24,6 +24,8 @@ repopick -t pie-battery-styles -e 221716,232663
 repopick 232663 -P vendor/lineage
 repopick 221716 -P frameworks/base/
 
+read -p "waiting... STRG-C to abort. ENTER to continue"
+
 # pie-network-traffic
 repopick -t pie-network-traffic -P frameworks/base
 
