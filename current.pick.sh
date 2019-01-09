@@ -56,9 +56,6 @@ repopick 237209 -P vendor/lineage/
 # config: Add Deskclock to power whitelist
 repopick 238057 -P vendor/lineage/
 
-# livedisplay: Update FOSS status prop for Pie
-repopick 238431
-
 # op3: Update FOSS props for Pie
 repopick 238432 -P device/oneplus/oneplus3/
 
