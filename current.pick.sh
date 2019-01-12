@@ -26,9 +26,9 @@ repopick https://review.lineageos.org/#/c/LineageOS/android_frameworks_base/+/22
 repopick 219299 -P packages/apps/Settings/
 
 #Merge tag 'LA.UM.6.6.r1-09900-89xx.0' 
-repopick 232913 -P hardware/qcom/audio-caf/msm8996/
-repopick 232914 -P hardware/qcom/display-caf/msm8996/
-repopick 232916 -P hardware/qcom/media-caf/msm8996/
+repopick 232913 -P hardware/qcom/audio-caf/msm8996/ -f
+repopick 232914 -P hardware/qcom/display-caf/msm8996/ -f
+repopick 232916 -P hardware/qcom/media-caf/msm8996/ -f
 
 # lineage-sdk: Start Weather service in onUnlockUser.
 repopick 235659
