@@ -29,6 +29,3 @@ repopick 219299 -P packages/apps/Settings/
 repopick 232913 -P hardware/qcom/audio-caf/msm8996/ -f
 repopick 232914 -P hardware/qcom/display-caf/msm8996/ -f
 repopick 232916 -P hardware/qcom/media-caf/msm8996/ -f
-
-# lineage-sdk: Start Weather service in onUnlockUser.
-repopick 235659
