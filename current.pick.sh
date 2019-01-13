@@ -51,3 +51,6 @@ repopick 237209 -P vendor/lineage/
 
 # Revert "AOSP/Messaging: bump targetSDK to 28"
 repopick 238551
+
+# add AOD to doze
+repopick 238995-238999 -P device/oneplus/oneplus3/
