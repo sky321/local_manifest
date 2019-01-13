@@ -61,8 +61,5 @@ repopick 233633 -P frameworks/base/
 repopick 233634 -P packages/apps/Settings/
 repopick 237209 -P vendor/lineage/
 
-# config: Add Deskclock to power whitelist
-repopick 238057 -P vendor/lineage/
-
 # Revert "AOSP/Messaging: bump targetSDK to 28"
 repopick 238551
