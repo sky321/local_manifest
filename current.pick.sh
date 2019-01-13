@@ -38,9 +38,6 @@ repopick 219760 -P system/nfc/
 # SystemUI: allow devices override audio panel location
 repopick 236982 -P frameworks/base -f
 
-# power: Add specific powerhal for msm8937
-repopick 237769 -P hardware/qcom/power/
-
 # power: Handle launch and interaction hints for perf HAL platforms
 repopick 237002 -P hardware/qcom/power/
 
