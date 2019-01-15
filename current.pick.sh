@@ -51,3 +51,9 @@ repopick 237209 -P vendor/lineage/
 
 # Revert "AOSP/Messaging: bump targetSDK to 28"
 repopick 238551
+
+# LA.UM.7.6.r1-03900-89xx.0
+repopick 239056 -P hardware/qcom/audio-caf/msm8996/
+repopick 239057 -P hardware/qcom/dispay-caf/msm8996/
+repopick 239058 -P hardware/qcom/media-caf/msm8996/
+
