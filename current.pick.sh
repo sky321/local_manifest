@@ -16,7 +16,7 @@ source build/envsetup.sh
 safer-repopick() {
     repopick $*
     if [ "$?" -gt "0" ] ; then
-      read -p "$0 $*: ENTER to continue"
+      read -p "repopick $* failed. After fixing hit ENTER to continue..."
     fi
 }
 
@@ -70,3 +70,6 @@ safer-repopick 239058 -P hardware/qcom/media-caf/msm8996/
 safer-repopick 239179 -P frameworks/base/
 # op3: Force HAL1 for WhatsApp
 safer-repopick 239180 -P device/oneplus/oneplus3/
+
+# StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo
+safer-repopick 238142 -P frameworks/base/
