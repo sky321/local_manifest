@@ -57,3 +57,7 @@ repopick 239056 -P hardware/qcom/audio-caf/msm8996/
 repopick 239057 -P hardware/qcom/dispay-caf/msm8996/
 repopick 239058 -P hardware/qcom/media-caf/msm8996/
 
+# Camera: Force HAL1 for predefined package list.
+repopick 239179 -P frameworks/base/
+# op3: Force HAL1 for WhatsApp
+repopick 239180 -P device/oneplus/oneplus3/
