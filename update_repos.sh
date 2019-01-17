@@ -9,6 +9,7 @@ build/soong
 frameworks/base
 hardware/qcom/power
 lineage-sdk
+packages/apps/LineageParts
 packages/apps/PackageInstaller
 packages/apps/Settings
 packages/apps/WallpaperPicker
