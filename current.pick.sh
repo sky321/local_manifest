@@ -55,8 +55,3 @@ safer-repopick 237209 -P vendor/lineage/
 
 # Revert "AOSP/Messaging: bump targetSDK to 28"
 safer-repopick 238551
-
-# Camera: Force HAL1 for predefined package list.
-safer-repopick 239179 -P frameworks/base/
-# op3: Force HAL1 for WhatsApp
-safer-repopick 239180 -P device/oneplus/oneplus3/
