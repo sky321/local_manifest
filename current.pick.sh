@@ -30,11 +30,6 @@ safer-repopick 235986 -P frameworks/base
 # pie-qcom-sepolicy
 safer-repopick -t pie-qcom-sepolicy
 
-# pie-battery-styles
-safer-repopick -t pie-battery-styles -e 221716,232663
-safer-repopick 232663 -P vendor/lineage
-safer-repopick 221716 -P frameworks/base/
-
 # pie-network-traffic
 safer-repopick -t pie-network-traffic -P frameworks/base
 
