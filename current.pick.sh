@@ -44,7 +44,8 @@ safer-repopick 236982 -P frameworks/base -f
 
 # pie-qcom-wfd
 safer-repopick -t pie-qcom-wfd -e 237206,237194,237173,237352,237174 -P frameworks/base/
-safer-repopick 237173 237206
+safer-repopick 237173
+safer-repopick 237206 -P frameworks/av
 safer-repopick 237352 -P vendor/lineage/
 
 # pie-msim-ringtones
