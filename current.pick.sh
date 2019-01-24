@@ -55,4 +55,4 @@ safer-repopick 233634 -P packages/apps/Settings/
 safer-repopick 237209 -P vendor/lineage/
 
 # Revert "AOSP/Messaging: bump targetSDK to 28"
-safer-repopick 238551
+safer-repopick 238551 -f
