@@ -20,10 +20,10 @@ repopick 213836
 repopick -f 217171
 
 #battery customisation
-repopick 220407 220422
+repopick 220407 220422 -f
 repopick https://review.lineageos.org/#/c/LineageOS/android_packages_apps_LineageParts/+/221756/3 -P packages/apps/LineageParts
 repopick https://review.lineageos.org/#/c/LineageOS/android_frameworks_base/+/221716/18 -P frameworks/base/
-repopick 219299 -P packages/apps/Settings/
+repopick 219299 -P packages/apps/Settings/ -f
 
 #Merge tag 'LA.UM.6.6.r1-09900-89xx.0' 
 repopick 232913 -P hardware/qcom/audio-caf/msm8996/ -f
