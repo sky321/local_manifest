@@ -55,9 +55,6 @@ safer-repopick 233633 -P frameworks/base/
 safer-repopick 233634 -P packages/apps/Settings/
 safer-repopick 237209 -P vendor/lineage/
 
-# Revert "AOSP/Messaging: bump targetSDK to 28"
-safer-repopick 238551
-
 # libril: Fix manual network selection with old modem & op3: Enable workaround for old MCC/MNC format
 safer-repopick 230737
 safer-repopick 240026 -P device/oneplus/oneplus3/
