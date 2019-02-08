@@ -67,3 +67,7 @@ safer-repopick 240026 -P device/oneplus/oneplus3/
 
 # settings: Allow accessing LineageSettings via settings command
 safer-repopick 226358 -P frameworks/base/
+
+# op3: Convert TouchscreenGestures to touch HAL
+safer-repopick 241212 -P device/oneplus/oneplus3/
+
