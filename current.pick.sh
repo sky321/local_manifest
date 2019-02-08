@@ -73,3 +73,6 @@ safer-repopick 241212 -P device/oneplus/oneplus3/
 
 # op3: Convert KeyDisabler to touch HAL
 safer-repopick 241213 -P device/oneplus/oneplus3/
+
+# op3: Migrate to livedisplay 2.0
+safer-repopick 240885 -P device/oneplus/oneplus3/
