@@ -71,9 +71,6 @@ safer-repopick 226358 -P frameworks/base/
 # op3: Migrate to livedisplay 2.0
 safer-repopick 240885 -P device/oneplus/oneplus3/
 
-# op3: livedisplay: Support sysfs backend display modes
-safer-repopick 241174 -P device/oneplus/oneplus3/
-
 # lineagehw-hidl
 safer-repopick 241116
 safer-repopick -t lineagehw-hidl -e 241116,241004
