@@ -37,8 +37,8 @@ safer-repopick 221716 -P frameworks/base/
 safer-repopick 227931 -P lineage-sdk/
 
 # pie-network-traffic
-safer-repopick -t pie-network-traffic -P frameworks/base -e 238702
-safer-repopick 238702 -P packages/apps/LineageParts/
+safer-repopick -t pie-network-traffic -P frameworks/base -e 238702,241519
+safer-repopick 238702 241519 -P packages/apps/LineageParts/
 
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
