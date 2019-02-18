@@ -61,9 +61,6 @@ safer-repopick 233633 -P frameworks/base/
 safer-repopick 233634 -P packages/apps/Settings/
 safer-repopick 237209 -P vendor/lineage/
 
-# settings: Allow accessing LineageSettings via settings command
-safer-repopick 226358 -P frameworks/base/
-
 # lineagehw-hidl
 safer-repopick 241116
 safer-repopick -t lineagehw-hidl -e 241116,241004
