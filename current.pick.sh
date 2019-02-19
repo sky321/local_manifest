@@ -65,3 +65,7 @@ safer-repopick 237209 -P vendor/lineage/
 safer-repopick 241116
 safer-repopick -t lineagehw-hidl -e 241116,241004
 safer-repopick 241004 -P lineage-sdk/
+
+# lineage-sepolicy-fix & op3: Rewrite livedisplay HAL sepolicy
+safer-repopick -t lineage-sepolicy-fix
+safer-repopick 241763 -P device/oneplus/oneplus3/
