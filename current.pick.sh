@@ -78,3 +78,6 @@ safer-repopick 242432 -P vendor/lineage/
 
 # Make custom off-mode charging screen great again
 safer-repopick 242433 -P vendor/lineage/
+
+# Allow Gallery to access system_app_data_file
+safer-repopick 242792
