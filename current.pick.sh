@@ -72,3 +72,6 @@ safer-repopick 241763 -P device/oneplus/oneplus3/
 
 # pie-caf-imports
 safer-repopick -t pie-caf-imports
+
+# RIP libhealthd.lineage
+safer-repopick 242432 -P vendor/lineage/
