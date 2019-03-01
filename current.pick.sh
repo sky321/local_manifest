@@ -75,3 +75,6 @@ safer-repopick -t pie-caf-imports
 
 # RIP libhealthd.lineage
 safer-repopick 242432 -P vendor/lineage/
+
+# Make custom off-mode charging screen great again
+safer-repopick 242433 -P vendor/lineage/
