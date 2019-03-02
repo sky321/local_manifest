@@ -43,6 +43,9 @@ safer-repopick 238702 241519 -P packages/apps/LineageParts/
 # SystemUI: Remove unused resources
 safer-repopick 242684 -P frameworks/base
 
+# Add ChargingStarted + InCallNotif to AudioPackage
+safer-repopick 242893 -P frameworks/base
+
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
