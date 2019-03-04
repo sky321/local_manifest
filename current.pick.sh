@@ -42,9 +42,6 @@ safer-repopick 242684 -P frameworks/base
 # Add ChargingStarted + InCallNotif to AudioPackage
 safer-repopick 242893 -P frameworks/base
 
-# Include InCallNotification.ogg in AllAudio.mk file
-safer-repopick 242894 -P frameworks/base
-
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
