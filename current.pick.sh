@@ -36,9 +36,6 @@ safer-repopick 232663 -P vendor/lineage
 safer-repopick 221716 -P frameworks/base/
 safer-repopick 227931 -P lineage-sdk/
 
-# SystemUI: Remove unused resources
-safer-repopick 242684 -P frameworks/base
-
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
