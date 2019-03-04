@@ -36,10 +36,6 @@ safer-repopick 232663 -P vendor/lineage
 safer-repopick 221716 -P frameworks/base/
 safer-repopick 227931 -P lineage-sdk/
 
-# pie-network-traffic
-safer-repopick -t pie-network-traffic -P frameworks/base -e 238702,241519
-safer-repopick 238702 241519 -P packages/apps/LineageParts/
-
 # SystemUI: Remove unused resources
 safer-repopick 242684 -P frameworks/base
 
