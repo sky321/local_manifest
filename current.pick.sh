@@ -77,9 +77,6 @@ safer-repopick -t fix-aapt-warnings -e 242678,242682
 safer-repopick 242678 -P packages/apps/Messaging/
 safer-repopick 242682 -P packages/apps/PackageInstaller/
 
-# effects: Initialize volume at -96
-safer-repopick 242705 -P frameworks/av/
-
 # p_webview_72.0.3626.121
 safer-repopick -t p_webview_72.0.3626.121
 
