@@ -77,8 +77,8 @@ safer-repopick -t fix-aapt-warnings -e 242678,242682
 safer-repopick 242678 -P packages/apps/Messaging/
 safer-repopick 242682 -P packages/apps/PackageInstaller/
 
-# p_webview_72.0.3626.121
-safer-repopick -t p_webview_72.0.3626.121
+# p_webview_72.0.3626.121 for x86 - arm merged
+safer-repopick 243685
 
 # unclipped_layers
 safer-repopick -t unclipped_layers -e 243693
