@@ -71,8 +71,3 @@ safer-repopick 242433 -P vendor/lineage/
 
 # Allow Gallery to access system_app_data_file
 safer-repopick 242792
-
-# fix-aapt-warnings
-safer-repopick -t fix-aapt-warnings -e 242678,242682
-safer-repopick 242678 -P packages/apps/Messaging/
-safer-repopick 242682 -P packages/apps/PackageInstaller/
