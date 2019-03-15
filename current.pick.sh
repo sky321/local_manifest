@@ -76,7 +76,3 @@ safer-repopick 242792
 safer-repopick -t fix-aapt-warnings -e 242678,242682
 safer-repopick 242678 -P packages/apps/Messaging/
 safer-repopick 242682 -P packages/apps/PackageInstaller/
-
-# unclipped_layers
-safer-repopick -t unclipped_layers -e 243693
-safer-repopick 243693 -P frameworks/base/
