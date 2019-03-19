@@ -58,7 +58,7 @@ safer-repopick 241004 -P lineage-sdk/
 
 # lineage-sepolicy-fix & op3: Rewrite livedisplay HAL sepolicy
 safer-repopick -t lineage-sepolicy-fix
-safer-repopick 241763 -P device/oneplus/oneplus3/
+#safer-repopick 241763 -P device/oneplus/oneplus3/
 
 # pie-caf-imports
 safer-repopick -t pie-caf-imports
