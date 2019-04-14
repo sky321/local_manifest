@@ -70,3 +70,8 @@ safer-repopick 244664 -P frameworks/base/
 
 # Update Chromium Webview to 73.0.3683.90
 safer-repopick 245252
+
+# p-display-shrink
+repopick -t p-display-shrink -e 237500,231828 -P frameworks/base/
+repopick 237500 -P packages/apps/Settings
+repopick 231828
