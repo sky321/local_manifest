@@ -36,9 +36,6 @@ safer-repopick 232663 -P vendor/lineage
 safer-repopick 221716 -P frameworks/base/
 safer-repopick 227931 -P lineage-sdk/
 
-# Audio assets: add NFC sounds
-safer-repopick 245621 -P frameworks/base/
-
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
