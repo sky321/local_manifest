@@ -61,10 +61,6 @@ safer-repopick 242432 -P vendor/lineage/
 # Make custom off-mode charging screen great again
 safer-repopick 242433 -P vendor/lineage/
 
-# pie-lockscreen-shortcuts
-safer-repopick 244663 -P packages/apps/Settings
-safer-repopick 244664 -P frameworks/base/
-
 # Update Chromium Webview to 73.0.3683.90
 safer-repopick 245252
 
