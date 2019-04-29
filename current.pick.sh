@@ -61,7 +61,7 @@ safer-repopick 242432 -P vendor/lineage/
 # Make custom off-mode charging screen great again
 safer-repopick 242433 -P vendor/lineage/
 
-# Update Chromium Webview to 73.0.3683.90
+# Update Chromium Webview to 74.0.3729.112
 safer-repopick 245252
 
 # p-display-shrink
