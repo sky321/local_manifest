@@ -71,3 +71,6 @@ repopick 231828
 
 # SystemUI: Enable and fix QS detail view, adapt layout to Pie
 safer-repopick 246850 -P frameworks/base/
+
+# SystemUI: Advanced location tile
+safer-repopick 225660 -P frameworks/base/
