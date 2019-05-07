@@ -74,3 +74,6 @@ safer-repopick 246850 -P frameworks/base/
 
 # SystemUI: Advanced location tile
 safer-repopick 225660 -P frameworks/base/
+
+# SystemUI: Add Profiles tile
+safer-repopick 227896 -P frameworks/base/
