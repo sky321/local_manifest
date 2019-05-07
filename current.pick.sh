@@ -65,9 +65,13 @@ safer-repopick 242433 -P vendor/lineage/
 safer-repopick 245252
 
 # p-display-shrink
-repopick -t p-display-shrink -e 237500,231828 -P frameworks/base/
-repopick 237500 -P packages/apps/Settings
-repopick 231828
+safer-repopick 231827 -P frameworks/base/
+safer-repopick 231847 -P frameworks/base/
+safer-repopick 231848 -P frameworks/base/
+safer-repopick 231851 -P frameworks/base/
+safer-repopick 231852 -P frameworks/base/
+safer-repopick 237500 -P packages/apps/Settings
+safer-repopick 231828
 
 # SystemUI: Enable and fix QS detail view, adapt layout to Pie
 safer-repopick 246850 -P frameworks/base/
