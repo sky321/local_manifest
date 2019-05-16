@@ -81,3 +81,8 @@ safer-repopick 225660 -P frameworks/base/
 
 # SystemUI: Add Profiles tile
 safer-repopick 227896 -P frameworks/base/
+
+# swipe_screenshot
+safer-repopick 247884 -P packages/apps/Settings
+safer-repopick 247885 -P lineage-sdk/
+safer-repopick 247886 -P frameworks/base/
