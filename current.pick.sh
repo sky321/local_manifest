@@ -42,9 +42,6 @@ safer-repopick 236765 -P frameworks/base
 # SDCLANG-6: fix declaration
 safer-repopick 219760 -P system/nfc/
 
-# SystemUI: allow devices override audio panel location
-safer-repopick 236982 -P frameworks/base -f
-
 # pie-msim-ringtones
 safer-repopick -t pie-msim-ringtones -e 233633,233634,237209
 safer-repopick 233633 -P frameworks/base/
