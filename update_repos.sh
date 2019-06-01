@@ -14,7 +14,6 @@ packages/apps/LineageParts
 packages/apps/Messaging
 packages/apps/PackageInstaller
 packages/apps/Settings
-packages/apps/WallpaperPicker
 vendor/lineage"
 
 for i in $REPOS; do
