@@ -73,9 +73,6 @@ safer-repopick 231828
 # SystemUI: Enable and fix QS detail view, adapt layout to Pie
 safer-repopick 246850 -P frameworks/base/
 
-# SystemUI: Advanced location tile
-safer-repopick 225660 -P frameworks/base/
-
 # swipe_screenshot
 safer-repopick 247884 -P packages/apps/Settings
 safer-repopick 247885 -P lineage-sdk/
