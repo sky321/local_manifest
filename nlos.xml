@@ -40,6 +40,9 @@
   <remove-project name="LineageOS/android_lineage-sdk" />
   <project path="lineage-sdk" name="nvertigo/android_lineage-sdk" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_packages_apps_Backgrounds" />
+  <project path="packages/apps/Backgrounds" name="nvertigo/android_packages_apps_Backgrounds" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
   <project path="packages/apps/LineageParts" name="nvertigo/android_packages_apps_LineageParts" revision="nlos-16.0" />
 
