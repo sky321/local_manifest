@@ -65,3 +65,8 @@ safer-repopick 231828
 safer-repopick 247884 -P packages/apps/Settings
 safer-repopick 247885 -P lineage-sdk/
 safer-repopick 247886 -P frameworks/base/
+
+# pie-audio-panel-location
+safer-repopick 249496 -P frameworks/base/ 
+safer-repopick 249517 -P packages/apps/LineageParts/
+safer-repopick 249518 -P lineage-sdk/
