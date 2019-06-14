@@ -23,10 +23,6 @@ safer-repopick() {
 # Crash app on foreground service notification error
 safer-repopick 235128 -P frameworks/base -f
 
-# pie linked volume
-safer-repopick 235978 236184 -P packages/apps/Settings
-safer-repopick 235986 -P frameworks/base
-
 # pie-qcom-sepolicy
 safer-repopick -t pie-qcom-sepolicy
 
