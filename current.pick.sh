@@ -23,9 +23,6 @@ safer-repopick() {
 # Crash app on foreground service notification error
 safer-repopick 235128 -P frameworks/base -f
 
-# pie-qcom-sepolicy
-safer-repopick -t pie-qcom-sepolicy
-
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
