@@ -20,9 +20,6 @@ safer-repopick() {
     fi
 }
 
-# Crash app on foreground service notification error
-safer-repopick 235128 -P frameworks/base -f
-
 # Sounds: Squashed cleanup of sound files
 safer-repopick 236765 -P frameworks/base
 
