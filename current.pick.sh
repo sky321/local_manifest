@@ -32,10 +32,6 @@ safer-repopick 233633 -P frameworks/base/
 safer-repopick 233634 -P packages/apps/Settings/
 safer-repopick 237209 -P vendor/lineage/
 
-# lineage-sepolicy-fix & op3: Rewrite livedisplay HAL sepolicy
-safer-repopick -t lineage-sepolicy-fix
-safer-repopick 241763 -P device/oneplus/oneplus3/
-
 # RIP libhealthd.lineage
 safer-repopick 242432 -P vendor/lineage/
 
