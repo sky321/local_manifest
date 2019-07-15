@@ -47,6 +47,10 @@ safer-repopick 231852 -P frameworks/base/
 safer-repopick 237500 -P packages/apps/Settings
 safer-repopick 231828
 
+# pie-onehandmode-tile
+safer-repopick 251522 -P frameworks/base/
+safer-repopick 251523 -P lineage-sdk/
+
 # swipe_screenshot
 safer-repopick 247884 -P packages/apps/Settings
 safer-repopick 247885 -P lineage-sdk/
