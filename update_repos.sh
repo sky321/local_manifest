@@ -12,7 +12,6 @@ hardware/qcom/power
 lineage-sdk
 packages/apps/Backgrounds
 packages/apps/LineageParts
-packages/apps/Messaging
 packages/apps/PackageInstaller
 packages/apps/Settings
 vendor/lineage"

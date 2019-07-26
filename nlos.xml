@@ -46,9 +46,6 @@
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
   <project path="packages/apps/LineageParts" name="nvertigo/android_packages_apps_LineageParts" revision="nlos-16.0" />
 
-  <remove-project name="LineageOS/android_packages_apps_Messaging" />
-  <project path="packages/apps/Messaging" name="nvertigo/android_packages_apps_Messaging" revision="nlos-16.0" />
-
   <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PackageInstaller" name="nvertigo/android_packages_apps_PackageInstaller" revision="nlos-16.0" />
 
