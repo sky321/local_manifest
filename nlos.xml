@@ -67,8 +67,4 @@
 
   <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="6.0.9" />
 
-<!-- for reference: vendor_xiaomi -->
-
-  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-16.0" />
-
 </manifest>
