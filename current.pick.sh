@@ -55,8 +55,3 @@ safer-repopick 251523 -P lineage-sdk/
 safer-repopick 247884 -P packages/apps/Settings
 safer-repopick 247885 -P lineage-sdk/
 safer-repopick 247886 -P frameworks/base/
-
-# fix-hwc2-outdoor
-safer-repopick -t fix-hwc2-outdoor -e 252721,252727,252729,252879 -P lineage-sdk/
-safer-repopick 252721 252729 -P packages/apps/LineageParts/
-safer-repopick 252727 252879 -P frameworks/base/
