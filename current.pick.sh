@@ -55,3 +55,6 @@ safer-repopick 251523 -P lineage-sdk/
 safer-repopick 247884 -P packages/apps/Settings
 safer-repopick 247885 -P lineage-sdk/
 safer-repopick 247886 -P frameworks/base/
+
+# Dialer: Add autorecord feature
+safer-repopick 251235
