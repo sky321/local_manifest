@@ -20,9 +20,6 @@ safer-repopick() {
     fi
 }
 
-safer-repopick -t P_asb_2019-08 -e 252607,252608,252609,252610,252615
-safer-repopick 252607 -P art/
-safer-repopick 252608 -P build/make/
-safer-repopick 252609 -P frameworks/av/
-safer-repopick 252610 -P frameworks/base/
-safer-repopick 252615 -P packages/apps/Settings
+safer-repopick -t P_asb_2019-09 -e 255698,255699,255700,255705
+safer-repopick 255698 255699 255700 -P frameworks/base/
+safer-repopick 255705 -P build/make/
