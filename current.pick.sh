@@ -35,9 +35,6 @@ safer-repopick 237209 -P vendor/lineage/
 # RIP libhealthd.lineage
 safer-repopick 242432 -P vendor/lineage/
 
-# Make custom off-mode charging screen great again
-safer-repopick 242433 -P vendor/lineage/
-
 # p-display-shrink
 safer-repopick 231827 -P frameworks/base/
 safer-repopick 231847 -P frameworks/base/
