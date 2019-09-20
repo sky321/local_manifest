@@ -27,9 +27,9 @@ safer-repopick 236765 -P frameworks/base -f
 safer-repopick 219760 -P system/nfc/
 
 # pie-msim-ringtones
-safer-repopick -t pie-msim-ringtones -e 233633,233634,237209
-safer-repopick 233633 -P frameworks/base/
-safer-repopick 233634 -P packages/apps/Settings/
+safer-repopick -t pie-msim-ringtones -e 233633,233634,237209 -f
+safer-repopick 233633 -P frameworks/base/ -f
+safer-repopick 233634 -P packages/apps/Settings/ -f
 safer-repopick 237209 -P vendor/lineage/
 
 # p-display-shrink
