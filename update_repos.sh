@@ -6,6 +6,7 @@ REPOS="
 art
 build/make
 build/soong
+device/lineage/sepolicy
 frameworks/av
 frameworks/base
 hardware/qcom/power

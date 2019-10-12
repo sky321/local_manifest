@@ -28,6 +28,9 @@
   <remove-project name="LineageOS/android_art" />
   <project path="art" name="nvertigo/android_art" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_device_lineage_sepolicy" />
+  <project path="device/lineage/sepolicy" name="nvertigo/android_device_lineage_sepolicy" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_hardware_qcom_power" />
   <project path="hardware/qcom/power" name="nvertigo/android_hardware_qcom_power" revision="nlos-16.0" />
 
