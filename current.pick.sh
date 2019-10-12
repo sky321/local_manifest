@@ -52,3 +52,6 @@ safer-repopick 247886 -P frameworks/base/
 
 # Dialer: Add autorecord feature
 safer-repopick 251235
+
+# Longshot
+${LOCAL_MANIFEST}/current.pick.git.sh
