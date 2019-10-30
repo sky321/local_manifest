@@ -53,5 +53,8 @@ safer-repopick 247886 -P frameworks/base/
 # Dialer: Add autorecord feature
 safer-repopick 251235
 
+# APNs: add IMS APNs for Airtel [IN]
+safer-repopick 242686 -P vendor/lineage/
+
 # Longshot
 ${LOCAL_MANIFEST}/current.pick.git.sh
