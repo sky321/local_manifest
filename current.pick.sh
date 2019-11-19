@@ -56,5 +56,10 @@ safer-repopick 251235
 # APNs: add IMS APNs for Airtel [IN]
 safer-repopick 242686 -P vendor/lineage/
 
+# button-shrink
+safer-repopick 264101 -P frameworks/base/
+safer-repopick 264102 -P lineage-sdk/
+safer-repopick 264103 -P packages/apps/LineageParts/
+
 # Longshot
 ${LOCAL_MANIFEST}/current.pick.git.sh
