@@ -20,69 +20,46 @@ safer-repopick() {
     fi
 }
 
-# Crash app on foreground service notification error
-safer-repopick 235128 -P frameworks/base -f
-
-# pie linked volume
-safer-repopick 235978 236184 -P packages/apps/Settings
-safer-repopick 235986 -P frameworks/base
-
-# pie-qcom-sepolicy
-safer-repopick -t pie-qcom-sepolicy
-
-# pie-battery-styles
-safer-repopick 221756 227930 -P packages/apps/LineageParts/
-safer-repopick 232663 -P vendor/lineage
-safer-repopick 221716 -P frameworks/base/
-safer-repopick 227931 -P lineage-sdk/
-
 # Sounds: Squashed cleanup of sound files
-safer-repopick 236765 -P frameworks/base
+safer-repopick 236765 -P frameworks/base -f
 
 # SDCLANG-6: fix declaration
 safer-repopick 219760 -P system/nfc/
 
-# SystemUI: allow devices override audio panel location
-safer-repopick 236982 -P frameworks/base -f
-
 # pie-msim-ringtones
-safer-repopick -t pie-msim-ringtones -e 233633,233634,237209
-safer-repopick 233633 -P frameworks/base/
-safer-repopick 233634 -P packages/apps/Settings/
+safer-repopick -t pie-msim-ringtones -e 233633,233634,237209 -f
+safer-repopick 233633 -P frameworks/base/ -f
+safer-repopick 233634 -P packages/apps/Settings/ -f
 safer-repopick 237209 -P vendor/lineage/
 
-# lineagehw-hidl
-safer-repopick 241116
-safer-repopick -t lineagehw-hidl -e 241116,241004
-safer-repopick 241004 -P lineage-sdk/
+# p-display-shrink
+safer-repopick 231827 -P frameworks/base/
+safer-repopick 231847 -P frameworks/base/
+safer-repopick 231848 -P frameworks/base/
+safer-repopick 231851 -P frameworks/base/
+safer-repopick 231852 -P frameworks/base/
+safer-repopick 237500 -P packages/apps/Settings
+safer-repopick 231828
 
-# lineage-sepolicy-fix & op3: Rewrite livedisplay HAL sepolicy
-safer-repopick -t lineage-sepolicy-fix
-safer-repopick 241763 -P device/oneplus/oneplus3/
+# pie-onehandmode-tile
+safer-repopick 251522 -P frameworks/base/
+safer-repopick 251523 -P lineage-sdk/
 
-# pie-caf-imports
-safer-repopick -t pie-caf-imports
+# swipe_screenshot
+safer-repopick 247884 -P packages/apps/Settings
+safer-repopick 247885 -P lineage-sdk/
+safer-repopick 247886 -P frameworks/base/
 
-# RIP libhealthd.lineage
-safer-repopick 242432 -P vendor/lineage/
+# Dialer: Add autorecord feature
+safer-repopick 251235
 
-# Make custom off-mode charging screen great again
-safer-repopick 242433 -P vendor/lineage/
+# APNs: add IMS APNs for Airtel [IN]
+safer-repopick 242686 -P vendor/lineage/
 
-# Allow Gallery to access system_app_data_file
-safer-repopick 242792
+# button-shrink
+safer-repopick 264101 -P frameworks/base/
+safer-repopick 264102 -P lineage-sdk/
+safer-repopick 264103 -P packages/apps/LineageParts/
 
-# fix-aapt-warnings
-safer-repopick -t fix-aapt-warnings -e 242678,242682
-safer-repopick 242678 -P packages/apps/Messaging/
-safer-repopick 242682 -P packages/apps/PackageInstaller/
-
-# effects: Initialize volume at -96
-safer-repopick 242705 -P frameworks/av/
-
-# p_webview_72.0.3626.121
-safer-repopick -t p_webview_72.0.3626.121
-
-# unclipped_layers
-safer-repopick -t unclipped_layers -e 243693
-safer-repopick 243693 -P frameworks/base/
+# Longshot
+${LOCAL_MANIFEST}/current.pick.git.sh

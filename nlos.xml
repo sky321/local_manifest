@@ -28,6 +28,9 @@
   <remove-project name="LineageOS/android_art" />
   <project path="art" name="nvertigo/android_art" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_device_lineage_sepolicy" />
+  <project path="device/lineage/sepolicy" name="nvertigo/android_device_lineage_sepolicy" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_hardware_qcom_power" />
   <project path="hardware/qcom/power" name="nvertigo/android_hardware_qcom_power" revision="nlos-16.0" />
 
@@ -40,20 +43,17 @@
   <remove-project name="LineageOS/android_lineage-sdk" />
   <project path="lineage-sdk" name="nvertigo/android_lineage-sdk" revision="nlos-16.0" />
 
+  <remove-project name="LineageOS/android_packages_apps_Backgrounds" />
+  <project path="packages/apps/Backgrounds" name="nvertigo/android_packages_apps_Backgrounds" revision="nlos-16.0" />
+
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
   <project path="packages/apps/LineageParts" name="nvertigo/android_packages_apps_LineageParts" revision="nlos-16.0" />
-
-  <remove-project name="LineageOS/android_packages_apps_Messaging" />
-  <project path="packages/apps/Messaging" name="nvertigo/android_packages_apps_Messaging" revision="nlos-16.0" />
 
   <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PackageInstaller" name="nvertigo/android_packages_apps_PackageInstaller" revision="nlos-16.0" />
 
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="nvertigo/android_packages_apps_Settings" revision="nlos-16.0" />
-
-  <remove-project name="LineageOS/android_packages_apps_WallpaperPicker" />
-  <project path="packages/apps/WallpaperPicker" name="nvertigo/android_packages_apps_NLOSWallpaperPicker" revision="nlos-16.0" />
 
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="nvertigo/android_vendor_lineage" revision="nlos-16.0" />
@@ -69,9 +69,5 @@
 <!-- get qcom native Snapdragon llvm toolchain -->
 
   <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="nvertigo/llvm-Snapdragon_LLVM_for_Android" remote="github" revision="6.0.9" />
-
-<!-- for reference: vendor_xiaomi -->
-
-  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-16.0" />
 
 </manifest>
